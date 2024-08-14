@@ -1,26 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bepoisso <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/13 16:00:46 by bepoisso          #+#    #+#             */
-/*   Updated: 2024/08/14 15:53:41 by bepoisso         ###   ########.fr       */
+/*   Created: 2024/08/14 15:53:45 by bepoisso          #+#    #+#             */
+/*   Updated: 2024/08/14 16:03:10 by bepoisso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_putchar(char c);
+void	ft_print_alphabet(void);
 
-void	ft_print_alphabet(void)
+#include <unistd.h>
+int	main(void)
 {
-	char	c;
-
-	c = 'a';
-	while (c <= 'z')
-	{
-		ft_putchar(c);
-		c++;
-	}
-	ft_putchar('\n');
+	write(1, "Expected : abcdefghijklmnopqrstuvwxyz\nGot : ", 45);
+	ft_print_alphabet();
 }

@@ -1,26 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bepoisso <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/13 16:00:46 by bepoisso          #+#    #+#             */
-/*   Updated: 2024/08/14 15:53:41 by bepoisso         ###   ########.fr       */
+/*   Created: 2024/08/14 16:11:42 by bepoisso          #+#    #+#             */
+/*   Updated: 2024/08/14 16:14:47 by bepoisso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar(char c);
+void	ft_ft(int *nbr);
 
-void	ft_print_alphabet(void)
+#include <stdio.h>
+int main()
 {
-	char	c;
-
-	c = 'a';
-	while (c <= 'z')
-	{
-		ft_putchar(c);
-		c++;
-	}
-	ft_putchar('\n');
+	int a = 0;
+	ft_ft(&a);
+	printf(a == 42 ? "[PASS] " : "[FAIL] ");
+	printf("Expected : 42 | Got : %d\n", a);
 }

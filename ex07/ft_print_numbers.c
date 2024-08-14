@@ -6,7 +6,7 @@
 /*   By: bepoisso <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/13 16:09:53 by bepoisso          #+#    #+#             */
-/*   Updated: 2024/08/13 16:12:46 by bepoisso         ###   ########.fr       */
+/*   Updated: 2024/08/14 16:01:20 by bepoisso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,3 @@ void	ft_print_numbers(void)
 	}
 	ft_putchar('\n');
 }
-
-// int main(void)
-// {
-// 	ft_print_numbers();
-// }

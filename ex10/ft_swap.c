@@ -6,7 +6,7 @@
 /*   By: bepoisso <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/13 16:26:45 by bepoisso          #+#    #+#             */
-/*   Updated: 2024/08/13 16:29:17 by bepoisso         ###   ########.fr       */
+/*   Updated: 2024/08/14 16:15:13 by bepoisso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,12 +18,3 @@ void	ft_swap(int *a, int *b)
 	*a = *b;
 	*b = temp;
 }
-
-// #include <stdio.h>
-// int main()
-// {
-// 	int a = 24;
-// 	int b = 42;
-// 	ft_swap(&a, &b);
-// 	printf("a = %d\nb = %d\n", a, b);
-// }
