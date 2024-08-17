@@ -6,18 +6,18 @@
 /*   By: bepoisso <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/17 20:02:13 by bepoisso          #+#    #+#             */
-/*   Updated: 2024/08/17 21:05:02 by bepoisso         ###   ########.fr       */
+/*   Updated: 2024/08/17 22:22:03 by bepoisso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_count_if(char **tab, int(*f)(char*))
+int	ft_count_if(char **tab, int(*f)(char*))
 {
 	int	count;
 	int	i;
 
 	i = 0;
 	count = 0;
-	while(tab[i] != 0)
+	while (tab[i] != 0)
 	{
 		if (f(tab[i]) == 1)
 			count++;
